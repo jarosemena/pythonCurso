@@ -1,3 +1,5 @@
+import os 
+
 file = open("textoprueba1.txt")
 
 
@@ -31,3 +33,16 @@ print('archivo 2',file3.read())
 
 file2.close
 file3.close
+
+try:
+    if os.path.exists("textoprueba2.txt"):
+        os.remove("textoprueba2.txt")
+except:
+    print("error al elimianar el archivo")
+
+if os.path.exists("NuevoDir"):
+    os.rmdir("NuevoDir")
+else: 
+    os.mkdir("NuevoDir")
+
+print(os.listdir())
