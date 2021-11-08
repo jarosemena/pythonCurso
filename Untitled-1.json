@@ -1,0 +1,50 @@
+{
+    "NUMERO_POLIZA": "5605",
+    "IDENTIFICACION": "126",
+    "CODIGO_PROVEEDOR": "257316049614172310225332182864339068846",
+    "CABECERA": {
+        "FECHA_TRANSACCION": "2021-01-04",
+        "ID_TRANSACCION_OSB": "sv324234dfcvhgge3212aqqwe223432",
+        "FECHA_PROCESAMIENTO": "2021-01-04",
+        "SISTEMA_DESTINO": "OSB",
+        "SISTEMA_ORIGEN": "CAJA_UNICA",
+        "CODIGO_OPERACION": "E01"
+    },
+    "SERVICIO": [
+        {
+            "COMENTARIO": "prueba",
+            "CODIGO_SERVICIO": "GSS5",
+            "TIPO_SERVICIO": "1011",
+            "DIAGNOSTICO": [
+                {
+                    "CPT_ID": "46606",
+                    "ICD_ID": "R100",
+                    "TERAPIA": [
+                        {
+                            "MONTO": "30",
+                            "DESCRIPCION": "TAFISIC",
+                            "CANTIDAD": "3"
+                        }
+                    ],
+                    "LABORATORIO": [
+                        {
+                            "DESCRIPCION": "lab"
+                        }
+                    ],
+                    "EXAMENES": [
+                        {
+                            "DESCRIPCION": "exa"
+                        }
+                    ],
+                    "MEDICAMENTOS": [
+                        {
+                            "DOSIS": "3 ml",
+                            "GENERICO": "",
+                            "DESCRIPCION": "med"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
