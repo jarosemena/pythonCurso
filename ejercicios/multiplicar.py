@@ -6,4 +6,4 @@ def multiplicar( a, b, resp = 0  ):
         resp = multiplicar (a, b-1,resp) + a
     return resp
    
-print('la respuesta es= ', multiplicar( 3,3))
+print('la respuesta es= ', multiplicar( 4,8))
