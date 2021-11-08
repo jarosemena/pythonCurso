@@ -5,13 +5,13 @@ file = open("textoprueba1.txt")
 
 print(file.read())
 
-file.close
+file.close()
 file = open("textoprueba1.txt")
 
 for line in file:
     print(line)
 
-file.close
+file.close()
 
 file2 = open("textoprueba2.txt",'w')
 file3 = open("textoprueba3.txt", 'a')
@@ -22,8 +22,8 @@ file3.write('\nPrueba Hola Mundo linea nueva')
 
 
 
-file2.close
-file3.close
+file2.close()
+file3.close()
 
 file2 = open("textoprueba2.txt",'r')
 file3 = open("textoprueba3.txt", 'r')
@@ -31,8 +31,8 @@ file3 = open("textoprueba3.txt", 'r')
 print('archivo 1',file2.read())
 print('archivo 2',file3.read())
 
-file2.close
-file3.close
+file2.close()
+file3.close()
 
 try:
     if os.path.exists("textoprueba2.txt"):
