@@ -35,21 +35,25 @@ cursor = midb.cursor()
 
 
 ## eliminar un registro de base de datos
-cursor.execute('select * from Usuario')
+# cursor.execute('select * from Usuario')
+# resultado = cursor.fetchall()
+# print(resultado)
+
+# sql = 'delete from Usuario where id = %s'
+# values = (10,)
+
+# cursor.execute(sql,values)
+# midb.commit()
+
+# cursor.execute('select * from Usuario')
+
+# resultado = cursor.fetchall()
+
+## limitar la consulta 
+sql = 'select * from Usuario limit 2'
+cursor.execute(sql)
+
 resultado = cursor.fetchall()
-print(resultado)
-
-sql = 'delete from Usuario where id = %s'
-values = (10,)
-
-cursor.execute(sql,values)
-midb.commit()
-
-cursor.execute('select * from Usuario')
-
-resultado = cursor.fetchall()
-
-
 
 print(resultado)
 
